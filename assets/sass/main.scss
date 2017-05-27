@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css?family=Bangers');
+
+// @import "header.scss";
+// @import "left_team.scss";
+// @import "right_team.scss";
+
+body {
+  // background-image: linear-gradient(to bottom left, #e35f61, #973999, #438ee1);
+  // background-image: linear-gradient(to bottom left, Lime, orange, LimeGreen);
+  background-image: url("../images/hockey_game.jpg");
+  background-position: center;
+  background-size: cover;
+  // background-image: linear-gradient(Cyan, DodgerBlue);
+  // background-repeat: no-repeat;
+  background-repeat: no-repeat;
+  height: 720px;
+
+  font-family: "Comic Sans MS", cursive, sans-serif;
+  font-size: 24px;
+    text-shadow: 2px 2px black;
+  color: white;
+}
+
+button {
+  width: 100px;
+  height: 50px;
+  font-family: Impact, Charcoal, sans-serif;
+  font-size: 24px;
+  text-align: center;
+  border-radius: 6px;
+}
+
+h1 {
+    text-align: center;
+    font-family: 'Bangers', cursive;
+    color: white;
+    text-shadow: 2px 2px black;
+    font-size: 80px;
+}
+
+h2 {
+    font-family: 'Bangers', cursive;
+    color: white;
+    text-shadow: 2px 2px black;
+    font-size: 32px;
+}
+
+.left, .right {
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  h2 {
+    font-size: 54px;
+  }
+}
+
+.hits {
+    margin-top: -20px;
+    margin-bottom: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 120px;
+}

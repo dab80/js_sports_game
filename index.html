@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>JS Game Challenge</title>
+  <style type="text/css">
+    .hide {
+      display: none;
+    }
+
+    .left {
+      float: left;
+    }
+
+    .right {
+      float: right;
+    }
+
+    .clear {
+      clear: both;
+    }
+  </style>
+  <link rel="stylesheet" href="assets/stylesheets/main.css">
+</head>
+
+<body>
+  <div style="width: 700px;margin: 0 auto;">
+    <h1 style="margin-bottom:5px">
+    <span id="main_heading">Hockey, JavaScript, and the DOM oh My!</span>
+  </h1>
+    <!-- <h2 style="margin-top: 0">...the game!</h2> -->
+    <h2 style="margin-top: 0">
+    <span id="sub_heading">...the game</span>
+  </h2>
+
+
+    <div style="margin: 0 auto;text-align:center">
+      <button id="reset">RESET</button><br> NUMBER OF RESETS: <span id="num_resets">0</span>
+    </div>
+
+    <div class="clear"></div>
+
+    <div class="left">
+      <h2>
+      <span id="team_1_name">Team 1</span>
+        <!-- Team 1 -->
+      </h2>
+
+      <div class="hits">
+        SHOTS TAKEN: <span id="teamone_numshots">0</span><br> GOALS: <span id="teamone_numhits">0</span>
+      </div>
+
+      <div>
+        <button id="teamone_shoot">SHOOT</button>
+      </div>
+
+    </div>
+
+    <div class="right">
+      <h2>
+      <span id="team_2_name">Team 2</span>
+      </h2>
+
+      <div class="hits">
+        SHOTS TAKEN: <span id="teamtwo_numshots">0</span><br> GOALS: <span id="teamtwo_numhits">0</span>
+      </div>
+
+      <div>
+        <button id="teamtwo_shoot">SHOOT</button>
+      </div>
+    </div>
+
+    <div class="clear"></div>
+
+  </div>
+
+  <audio id="myAudio">
+  <source src="assets/audio/Vanc2.mp3" type="audio/mpeg">
+</audio>
+
+  <script src="assets/javascripts/game.js"></script>
+  <script type="text/javascript" src="http://localhost:35729/livereload.js"></script>
+</body>
+
+</html>
